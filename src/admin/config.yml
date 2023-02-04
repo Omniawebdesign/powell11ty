@@ -20,6 +20,15 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       
       
-      
+      <p>
+  {% set date = date | date('YYYY-MM-DDTHH:mm:ss.SSSZ') %}
+  {% set options = {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  } %}
+  {% set frenchFormatter = new DateFn.Intl.DateTimeFormat('fr-FR', options) %}
+  {{ frenchFormatter.format(date) }}
+</p>
       
      
