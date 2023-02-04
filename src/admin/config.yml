@@ -22,9 +22,4 @@ collections:
       
       
       
-      {% set date = date | date('YYYY-MM-DDTHH:mm:ss.SSSZ') %}
-  {% set options = {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-  } %}
+     
