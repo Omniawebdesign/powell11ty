@@ -17,3 +17,21 @@ module.exports = function(eleventyConfig) {
     }
   };
 }
+
+
+
+
+
+
+
+
+
+module.exports = function (eleventyConfig) {
+  // ...
+  eleventyConfig.setTemplateFormats([
+    // Ajoutez les autres formats de fichiers que vous utilisez
+    "njk",
+    "json",
+  ]);
+  // ...
+};
