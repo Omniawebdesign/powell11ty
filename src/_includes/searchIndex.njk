@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     {
       "title": "{{ post.data.title | safe }}",
       "url": "{{ post.url | safe }}",
-      "content": "{{ post.templateContent | striptags | safe }}"
+      "content": "{{ blog.templateContent | striptags | safe }}"
     }{% if not loop.last %},{% endif %}
   {% endfor %}
 ]
