@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     // Ajoutez les autres formats de fichiers que vous utilisez
     "njk",
+    "md",
     "json",
   ]);
   // ...
