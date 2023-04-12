@@ -1,0 +1,13 @@
+---
+permalink: /searchIndex.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for post in collections.posts %}
+    {
+      "title": "{{ post.data.title | safe }}",
+      "url": "{{ post.url | safe }}",
+      "content": "{{ post.templateContent | striptags | safe }}"
+    }{% if not loop.last %},{% endif %}
+  {% endfor %}
+]
